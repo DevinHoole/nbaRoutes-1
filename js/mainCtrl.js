@@ -1,6 +1,7 @@
-var app = angular.module('nbaRoutes');
+'use strict';
 
-app.controller('mainCtrl', function($scope){
+app.controller('mainCtrl', function($scope) {
+  
   $scope.teams = [
     "Atlanta Hawks",
     "Boston Celtics",
@@ -33,4 +34,5 @@ app.controller('mainCtrl', function($scope){
     "Utah Jazz",
     "Washington Wizards"
   ];
+  
 });

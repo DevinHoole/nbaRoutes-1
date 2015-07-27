@@ -1,6 +1,6 @@
-var app = angular.module('nbaRoutes');
+'use strict';
 
-app.factory('httpRequestInterceptor', function () {
+app.factory('httpRequestInterceptor', function() {
   return {
     request: function (config) {
       config.headers = {

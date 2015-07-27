@@ -1,5 +1,5 @@
-var app = angular.module('nbaRoutes');
+'use strict';
 
-app.controller('homeCtrl', function($scope, homeService){
+app.controller('homeCtrl', function($scope, homeService) {
 
 });

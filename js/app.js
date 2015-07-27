@@ -1,6 +1,8 @@
+'use strict';
+
 var app = angular.module('nbaRoutes', ['ngRoute']);
 
-app.config(function($routeProvider, $httpProvider){
+app.config(function($routeProvider, $httpProvider) {
   $httpProvider.interceptors.push('httpRequestInterceptor');
 
   //router here
