@@ -20,7 +20,7 @@ app.controller('teamCtrl', function($scope, $routeParams, teamService, teamData)
 			$scope.homeTeam = 'Los Angeles Lakers';
 			$scope.logoPath = './images/lakers-logo.png';
 			break;
-		case 'miamiheaet':
+		case 'miamiheat':
 			$scope.homeTeam = 'Miami Heat';
 			$scope.logoPath = './images/heat-logo.png';
 			break;
