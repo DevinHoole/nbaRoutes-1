@@ -3,6 +3,7 @@
 app.controller('teamCtrl', function($scope, $routeParams, teamService, teamData) {
 
 	$scope.teamData = teamData;
+	console.log(teamData);
 	$scope.newGame = {};
 	$scope.showNewGameForm = false;
 

@@ -13,11 +13,11 @@ app.service('teamService', function($http, $q) {
 		}
 
 		$http.post(url, gameObj)
-		.then(function(data, status, headers, config) {
-			console.log(data);
+		.success(function(data, status, headers, config) {
+			//console.log(data);
   		})
   		.error(function(data, status, headers, config) {
-  			console.log('Error: ' + JSON.stringify({data: data});
+  			console.log('Error: ' + JSON.stringify({data: data}));
   		});
 
 	};
@@ -28,9 +28,9 @@ app.service('teamService', function($http, $q) {
 		var deferred = $q.defer();
 
 		$http.get(url)
-		.then(function(data, status, headers, config) {
-			console.log(data);
-			var results = data.data.results,
+		.success(function(data, status, headers, config) {
+			//console.log(data);
+			var results = data.results,
 				wins = 0,
 				losses = 0;
 
@@ -48,7 +48,7 @@ app.service('teamService', function($http, $q) {
 
   		})
   		.error(function(data, status, headers, config) {
-  			console.log('Error: ' + JSON.stringify({data: data});
+  			console.log('Error: ' + JSON.stringify({data: data}));
   		});
 
   		return deferred.promise;
