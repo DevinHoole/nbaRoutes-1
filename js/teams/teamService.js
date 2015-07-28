@@ -13,7 +13,7 @@ app.service('teamService', function($http, $q) {
 		}
 
 		$http.post(url, gameObj)
-		.success(function(data, status, headers, config) {
+		.then(function(data, status, headers, config) {
 			console.log(data);
   		})
   		.error(function(data, status, headers, config) {
@@ -28,7 +28,7 @@ app.service('teamService', function($http, $q) {
 		var deferred = $q.defer();
 
 		$http.get(url)
-		.success(function(data, status, headers, config) {
+		.then(function(data, status, headers, config) {
 			console.log(data);
 			var results = data.data.results,
 				wins = 0,
